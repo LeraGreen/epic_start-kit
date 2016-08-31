@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+
+
+  <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
+  <script>@@include('fonts/font_loading.js')</script>
+  <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
+  <noscript><link rel="stylesheet" href="css/font_opensans_woff.css"></noscript>
+
+  @@include('_include/page-head.html')
+
 
 
   <div id="promo" class="owl-carousel">
@@ -25,5 +30,12 @@
   </div>
 
 <script src="js/script.min.js"></script>
+=======
+  @@include('img/sprite-svg.svg')
+
+  <svg width="24" height="24"><use xlink:href="#loupe"></use></svg>
+
+  text
+>>>>>>> upstream/master
 </body>
 </html>
